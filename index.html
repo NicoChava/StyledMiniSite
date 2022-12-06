@@ -15,64 +15,96 @@
 </head>
 
 <body>
+
     <section id="home">
         <nav>
-            <img src="./HTML Practise Assets/FES.svg" alt="Logo">
+
+            <img src="./HTML Practise Assets/FES.svg" class="logo" alt="Logo">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
         <header>
-            <div>
-                <h1>Learning how to do the thing</h1>
-                <p>This is kinda the thing when you think about it</p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><button>The
-                        Thing!</button></a>
-            </div>
-        </header>
-    </section>
-    <main>
-        <section id="about">
-            <div>
-                <h2>About</h2>
-                <p>These are words about stuff.</p>
-                <p>These are less words.</p>
+            <div class="row">
+                <div>
+                    <h1>Learning how to do the thing</h1>
+                    <p class="subheader">This is kinda the thing when you think about it</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                        target="_blank"><button>The
+                            Thing!</button></a>
+                </div>
                 <figure>
-                    <img src="./HTML Practise Assets/about.jpg" alt="About Me">
+                    <img src="./HTML Practise Assets/laptop.png" alt="">
                 </figure>
             </div>
+        </header>
+
+    </section>
+
+    <main>
+
+        <section id="about">
+            <h2>About</h2>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">These are words about stuff.</p>
+                        <p class="section__description--para">These are less words.</p>
+                    </div>
+                    <figure class="about__img__wrapper">
+                        <img src="./HTML Practise Assets/about.jpg" alt="About Me">
+                    </figure>
+                </div>
+            </div>
         </section>
+
         <section id="discord">
             <h2>Discord</h2>
-            <p>This would be something about a link to my discord...</p>
-            <p>If I had a server, but I don't so enjoy these words and a picture.</p>
-            <figure>
-                <a href="https://discord.com/" target="_blank"><img src="./HTML Practise Assets/discord.png" alt=""></a>
-            </figure>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img__wrapper">
+                        <a href="https://discord.com" target="_blank"><img src="./HTML Practise Assets/discord.png"
+                                alt="Discord"></a>
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">This would be something about a link to my discord...</p>
+                        <p class="section__description--para">If I had a server, but I don't so enjoy these words and a
+                            picture.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section id="contact">
             <h2>Contact Me</h2>
-            <form>
-                <label>Email</label>
-                <input type="email">
-                <label>Message</label>
-                <textarea name"" id"" cols="30" rows="10"></textarea>
-                <button>Submit</button>
-            </form>
+            <div class="row">
+                <form>
+                    <label>Email</label>
+                    <input type="email" placeholder="jane@example.com">
+                    <label>Message</label>
+                    <textarea name"" id"" cols="30" rows="10" placeholder="Put some words in this box for me. 
+Much appreciated."></textarea>
+                    <button>Send a message!</button>
+                </form>
+            </div>
         </section>
+
     </main>
+
     <footer>
-        <img src="./HTML Practise Assets/FES.svg" alt="Footer">
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
+        <img class="footer__logo" src="./HTML Practise Assets/FES.svg" alt="Footer">
+        <div class="footer__links">
+            <a class="footer__link" href="#home">Home</a>
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
         </div>
         <p>Copyrighted by the copyleft</p>
     </footer>
+
 </body>
 
 </html>
